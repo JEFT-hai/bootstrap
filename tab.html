@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello World</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<style>
+    body,.tab-content{
+        margin-top:10px;
+    }
+</style>
+</head>
+
+<body>
+<ul class="nav nav-tabs">
+  <li><a href="#home" data-toggle="tab">第一页</a></li>
+  <li><a href="#profile" data-toggle="tab">第二页</a></li>
+  <li><a href="#messages" data-toggle="tab">第三页</a></li>
+  <li><a href="#message" data-toggle="tab">第四页</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home">一一一一一</div>
+  <div class="tab-pane" id="profile"><p>慕课网是做什么的？<br>
+      互联网技能教育，免费的哦。
+  </p></div>
+  <div class="tab-pane" id="messages">三三三三三</div>
+  <div class="tab-pane" id="message">四四四四四</div>
+</div>
+
+<script src=" http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src=" http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(
+      $(function(){
+        $("a[href='#profile']").tab("show");
+        })
+      );
+</script>
+</body>
+</html>
